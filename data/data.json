@@ -91,8 +91,8 @@
             ]
         },
         "5d7fee8492329": {
-            "firstName": "Michael",
-            "lastName": "Michaelsen",
+            "firstName": "Mmmm",
+            "lastName": "Mmmmm",
             "email": "m@m.com",
             "phone": "22442244",
             "password": "54321",
@@ -174,15 +174,5 @@
             "phone": "11111111",
             "password": "12345",
             "active": 0
-        },
-        "5d7fe67aef0fa": {
-            "firstName": "Louise",
-            "lastName": "Jessen",
-            "email": "louise@haugejessen.dk",
-            "phone": "61787250",
-            "password": "12345",
-            "active": 1,
-            "activationKey": "5d7fe67aef0fc-5d7fe67aef0fd"
         }
-    }
 }
