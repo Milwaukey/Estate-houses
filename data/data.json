@@ -1,0 +1,188 @@
+{
+    "agents": {
+        "5d77ef9a6cew432a1b": {
+            "firstName": "Xayah",
+            "lastName": "Xsie",
+            "email": "x@x.com",
+            "phone": "11111111",
+            "password": "12345",
+            "active": 1,
+            "profileImage": "5d77ef9a6ca2d.jpg",
+            "properties": [
+                {
+                    "id": "5d7f9c0fe7d22",
+                    "title": "Apartment Bizz",
+                    "description": "This is an amazing apartment for a medium family, covering the most needed part.",
+                    "price": 2000000,
+                    "upLoadedDate": 1568644111,
+                    "adress": {
+                        "steet": "Smallegade",
+                        "streetNumber": "113A",
+                        "zip": "2000"
+                    },
+                    "geometry": {
+                        "coordinates": [
+                            12.525565000000000281943357549607753753662109375,
+                            55.67947600000000107911546365357935428619384765625
+                        ]
+                    },
+                    "size": {
+                        "value": "103",
+                        "unit": "squaremeters"
+                    },
+                    "images": [
+                        "5d7f9c0fe7f03.jpg",
+                        "5d7f9c0fe7f9b.jpg",
+                        "5d7f9c0fe7ff2.jpg"
+                    ]
+                },
+                {
+                    "id": "5d7f9d1906fc4",
+                    "title": "Colored Paradise ",
+                    "description": "Fix and small apartment designed for a little family and has all you need in the daily life.",
+                    "price": 800000,
+                    "upLoadedDate": 1568644377,
+                    "adress": {
+                        "steet": "Vesterbrogade",
+                        "streetNumber": "172",
+                        "zip": "1800"
+                    },
+                    "geometry": {
+                        "coordinates": [
+                            12.5372420000000008855067790136672556400299072265625,
+                            55.67052199999999828605723450891673564910888671875
+                        ]
+                    },
+                    "size": {
+                        "value": 79,
+                        "unit": "squaremeters"
+                    },
+                    "images": [
+                        "5d7f9d1906fed.jpg",
+                        "5d7f9d1907088.jpeg"
+                    ]
+                },
+                {
+                    "id": "5d7fa0523b3c9",
+                    "title": "Stunning Villa",
+                    "description": "Amazing big villa laying right down to the beauty Fures\u00f8, has an amazing overview of the sea.",
+                    "price": 5000000,
+                    "upLoadedDate": 1568645202,
+                    "adress": {
+                        "steet": "Fredsskovvej",
+                        "streetNumber": "72",
+                        "zip": "2480"
+                    },
+                    "geometry": {
+                        "coordinates": [
+                            12.460235000000000837871994008310139179229736328125,
+                            55.813096999999999070496414788067340850830078125
+                        ]
+                    },
+                    "size": {
+                        "value": 178,
+                        "unit": "squaremeters"
+                    },
+                    "images": [
+                        "5d7fa0523b3db.jpg",
+                        "5d7fa0523b462.jpg"
+                    ]
+                }
+            ]
+        },
+        "5d7fee8492329": {
+            "firstName": "Michael",
+            "lastName": "Michaelsen",
+            "email": "m@m.com",
+            "phone": "22442244",
+            "password": "54321",
+            "active": 0,
+            "profileImage": "5d7fee8492333.jpg",
+            "properties": [
+                {
+                    "id": "5d7fefb862edc",
+                    "title": "McDreamy House",
+                    "description": "The all time house, named after Grace Anatomy mcDreamy with a lovely pool to chill with your love one.",
+                    "price": 10000000,
+                    "upLoadedDate": 1568665528,
+                    "adress": {
+                        "steet": "Marb\u00e6kvej",
+                        "streetNumber": "128",
+                        "zip": "3600"
+                    },
+                    "geometry": {
+                        "coordinates": [
+                            12.0773279999999996192627804703079164028167724609375,
+                            55.80966099999999840974851395003497600555419921875
+                        ]
+                    },
+                    "size": {
+                        "value": "150",
+                        "unit": "squaremeters"
+                    },
+                    "images": [
+                        "5d7fefb862eea.jpg",
+                        "5d7fefb862f6c.jpg"
+                    ]
+                }
+            ]
+        },
+        "5d80f8874ed71": {
+            "firstName": "Mia",
+            "lastName": "Majisen",
+            "email": "m@m.dk",
+            "phone": "33333333",
+            "password": "222222",
+            "active": 0,
+            "profileImage": "5d80f8874ed82.jpg",
+            "properties": [
+                {
+                    "id": "5d80f9a8cc438",
+                    "title": "Family Home",
+                    "description": "Perfect for the big family, many possibilities indoor and outdoor, and even for small ones.",
+                    "price": 2000000,
+                    "upLoadedDate": 1568733608,
+                    "adress": {
+                        "steet": "Plantagevej",
+                        "streetNumber": "72Q",
+                        "zip": "3600"
+                    },
+                    "geometry": {
+                        "coordinates": [
+                            12.06766999999999967485564411617815494537353515625,
+                            55.82591000000000036607161746360361576080322265625
+                        ]
+                    },
+                    "size": {
+                        "value": 92,
+                        "unit": "squaremeters"
+                    },
+                    "images": [
+                        "5d80f9a8cc468.jpg",
+                        "5d80f9a8cc526.jpg",
+                        "5d80f9a8cc585.jpg"
+                    ]
+                }
+            ]
+        }
+    },
+    "users": {
+        "5d7e1235e4113": {
+            "firstName": "Xxx",
+            "lastName": "xx",
+            "email": "x@x.com",
+            "phone": "11111111",
+            "password": "12345",
+            "active": 0
+        },
+        "5d7fe67aef0fa": {
+            "firstName": "Louise",
+            "lastName": "Jessen",
+            "email": "louise@haugejessen.dk",
+            "phone": "61787250",
+            "password": "12345",
+            "active": 1,
+            "activationKey": "5d7fe67aef0fc-5d7fe67aef0fd"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "agents":{
+        "A1":{
+            "name":"",
+            "lastName":"",
+            "email":"",
+            "phone":"",
+            "password":"",
+            "profilePicture": "",
+            "verify":0,
+            "activationKey":"",
+            "properties":[
+                {
+                    "id":"P1",
+                   "title":"",
+                   "price":0,
+                   "upLoadedDate":0,
+                   "favoritedBy":["U1", "U2"],
+                   "adress":{
+                       "zip":"",
+                       "street":"",
+                       "streetNumber":""
+                   },
+                   "coordinates":[12.537753, 55.703888],
+                   "size":{
+                       "value": 0,
+                       "unit": "squaremeters"
+                   },
+                   "images": []
+                }
+            ]
+        }
+    },
+    "users":{
+        "U1": {
+            "name":"",
+            "lastName":"",
+            "email":"",
+            "phone":"",
+            "password":"",
+            "verify":0,
+            "activationKey":"",
+            "favoriteProperties": ["P1", "P2"]
+        }
+        
+    }
+}
+
+

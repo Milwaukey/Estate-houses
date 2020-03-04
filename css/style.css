@@ -1,0 +1,652 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ******************** BASIC  ************************ */ 
+
+
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.active_menu {
+    font-weight: 800;
+}
+
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active {
+    border: 2px solid #911616;
+}
+
+.delete_account {
+    cursor: pointer;
+    width: 150px;
+}
+
+.error {
+    /* background-color: red; */
+    border-bottom: 2px solid #911616!important;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#page_container {
+    margin-top: 80px;
+    padding: 20px;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+/* width: 100vw;
+    background-image: url('../images/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+
+
+/* ******************** NAV ************************ */
+
+.logo {
+    position: fixed;
+    width: 120px;
+    left: 20px;
+    z-index: 2;
+    top: 15px;
+}
+
+nav {
+    position: fixed;
+    z-index: 3;
+    background: #282828;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+nav.close {
+    display: none;
+}
+
+
+nav.open {
+    display: block;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 200px 50px
+}
+
+nav.open a{
+    color: white;
+}
+
+.burger_menu {
+    overflow: hidden;
+    z-index: 5;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding-top: 23px;
+    font-weight: 800;
+    color: #000;
+    cursor: pointer;
+}
+
+.burger_menu.color {
+    color: white;
+}
+
+.burger_menu:before {
+    position: absolute;
+    top: 8px;
+    width: 60px;
+    content: "";
+    background: #000;
+    height: 3px;
+    display: block;
+    margin: 0 0 0 -20px;
+
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.burger_menu:after {
+    top: 15px;
+    position: absolute;
+    width: 60px;
+    content: "";
+    background: #000;
+    height: 3px;
+    display: block;
+    margin: 0 0 0 -20px;
+
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.burger_menu.close:before {
+    transform: rotate(30deg);
+    margin: 3px 0 0 1px;
+    width: 40px;
+    background: #fff;
+}
+
+.burger_menu.close:after {
+    transform: rotate(-30deg);
+    margin: -4px 0 0 0px;
+    width: 40px;
+    background: #fff;
+}
+
+.menu_wrapper {
+    height: 80px;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.signup_btn {
+    background: #9CCC65;
+    padding: 10px;
+    width: 130px;
+    color: white;
+    align-self: center;
+}
+
+.signup_btn:hover {
+    background: rgb(127, 172, 76);
+    transition: all 0.2s ease-in 0s;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .burger_menu {
+        display: none;
+    }
+
+    nav.close {
+        display: block;
+        background: none;
+        height: 80px;
+        position: fixed;
+        top: 0;
+
+        width: 500px;
+    display: flex;
+    right: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+
+}
+
+
+
+/************* PROPERITES **************/
+
+#view_all_properties_container {
+
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    width: 100vw;
+
+}
+
+#properties {
+    overflow-y: scroll;
+}
+
+.properties_wrapper {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#my_properties_container {
+    margin: 0 auto;
+    display: grid;
+    padding: 35px 15px;
+    grid-gap: 20px;
+}
+
+  @media only screen and (min-width: 668px) {
+
+    #my_properties_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 769px) {
+    #my_properties_container {
+    max-width: 800px;
+    }
+
+  }
+
+ @media only screen and (min-width: 1025px) {
+     
+    #my_properties_container {
+        max-width: 1100px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+ }
+
+.property_container {
+    width: 320px;
+    height: 450px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.property_container .top{
+    height: 200px;
+    position: relative;
+}
+
+.property_container .top div {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    background-color: #9CCC65;
+}
+
+.property_container .top img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.property_container .bottom{
+    background: white;
+    padding: 20px;
+    position: relative;
+}
+
+.property_container .bottom h2 {
+    margin-top: 15px;
+}
+
+.property_container .icons {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.property_container .icons img {
+    width: 100%;
+
+}
+
+.property_container .bottom .like {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.property_container .bottom .line {
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+}
+
+.property_container .bottom .house_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/************ ADD NEW PROPERTY ****************/ 
+
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+} */
+
+.add_new_property_h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#frmNewProperty, #frmEditProperty {
+width: 350px;
+padding: 15px;
+margin: 0 auto;
+}
+
+#frmNewProperty input, #frmEditProperty input {
+    padding: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-bottom: 30px;
+    /* color: white; */
+}
+
+#frmNewProperty input::placeholder, #frmEditProperty input::placeholder{
+    color: rgba(0, 0, 0, 0.6)
+}
+
+#frmNewProperty div, #frmEditProperty div {
+    font-weight: 800;
+}
+
+#frmNewProperty button, #frmEditProperty button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: #9CCC65;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#frmNewProperty button:hover, #frmEditProperty button:hover {
+    background: rgb(127, 172, 76);
+    transition: all 0.2s ease-in 0s;
+}
+
+#frmNewProperty input:focus, #frmEditProperty input:focus {
+    border-bottom: 2px solid #9CCC65;
+    transition: all 0.2s ease-in 0s;
+}
+
+#propertyImageUpload {
+    border-bottom: none!important;
+}
+
+/*************** PROFILE ****************/
+
+#background_image_container {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+}
+
+#agent_user_profile_container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#agent_user_profile_container {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 50px 30px;
+    padding: 15px;
+    width: 300px;
+    margin-top: 100px;
+}
+
+#agent_user_profile_container div {
+    font-weight: 800;
+}
+
+#agent_user_profile_container input {
+    width: 100%;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+#agent_user_profile_container input:focus {
+    border-bottom: 2px solid #9CCC65;
+}
+
+#agent_profileImages {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.delete_account {
+    padding: 15px;
+    background: #911616;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.delete_account:hover {
+    background: rgba(145, 22, 22, 0.6);
+    transition: all 0.2s ease-in 0s;
+}
+
+
+
+/************ SEARCH *******************/
+
+
+#frmSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_container h1 {
+    color: white;
+    margin-top: -150px;
+    text-align: center;
+    line-height: 0.8;
+    padding: 50px;
+}
+
+#search_container span {
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    color: #9CCC65;
+}
+
+#search_container {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#background_image_search {
+
+    background-image: url('../images/search-image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100% - 80px);
+    z-index: -2;
+    position: fixed;
+
+}
+
+.overlay {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+#txtSearch {
+
+    width: 220px;
+    padding: 12px;
+    border-bottom: 2px solid white;
+    color: white;
+
+}
+
+#txtSearch::placeholder {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+#txtSearch:focus {
+    border-bottom: 2px solid #9CCC65;
+    transition: all 0.2s ease-in 0s;
+}
+
+
+.div_search_results {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.div_search_results:hover, .div_search_results:hover a{
+    background: #9CCC65;
+    color: #fff;
+}
+
+
+#results {
+    background: white;
+    margin-top: 10px;
+    position: absolute;
+    width: 220px;
+    display: none;
+    margin-left: -9px;
+}
+
+
+
+/************** LOGIN / SIGNUP ***************/ 
+
+h1 .login_signup_special_title {
+    font-family: 'Sacramento', cursive;
+    font-size: 70px;
+    line-height: 0.4;
+}
+
+.btnLoginSignup {
+    width: 200px;
+    background: #9CCC65;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btnLoginSignup:hover {
+    background: rgb(127, 172, 76);
+    transition: all 0.2s ease-in 0s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#frmLogin, #signupForm {
+color: white;
+width: 350px;
+padding: 15px;
+}
+
+#frmLogin input, #signupForm input {
+    padding: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#frmLogin input::placeholder, #signupForm input::placeholder {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+#frmLogin div, #signupForm div {
+    font-weight: 800;
+}
+
+#frmLogin button, #signupForm button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: #9CCC65;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#frmLogin button:hover, #signupForm button:hover {
+    background: rgb(127, 172, 76);
+    transition: all 0.2s ease-in 0s;
+}
+
+#frmLogin input:focus, #signupForm input:focus {
+    border-bottom: 2px solid #9CCC65;
+    transition: all 0.2s ease-in 0s;
+}
+
+#signUpImage {
+    border-bottom: none!important;
+}
+
+.name_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+}
